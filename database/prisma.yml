@@ -1,0 +1,8 @@
+#O endpoint HTTP para API Prisma
+endpoint: ''
+
+#Arquivo que mantem o modelo de dados.
+datamodel: datamodel.graphql
+
+#Secret para autenticação
+secret: mygraphqlmath123
