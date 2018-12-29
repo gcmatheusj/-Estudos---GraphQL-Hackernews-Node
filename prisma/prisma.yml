@@ -1,0 +1,12 @@
+#O endpoint HTTP para API Prisma
+#endpoint: ''
+endpoint: https://us1.prisma.sh/goca1377-9a5bcc/gcmatheusj-prisma-db/dev
+
+
+#Arquivo que mantem o modelo de dados.
+datamodel: datamodel.prisma
+
+# linguagem e local para cliente Prisma gerado.
+generate:
+  - generator: javascript-client
+    output: ../src/generated/prisma-client
