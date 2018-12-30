@@ -1,4 +1,4 @@
-#O endpoint HTTP para API Prisma
+#O endpoint HTTP para API Prisma.
 #endpoint: ''
 endpoint: https://us1.prisma.sh/goca1377-9a5bcc/gcmatheusj-prisma-db/dev
 
@@ -10,3 +10,11 @@ datamodel: datamodel.prisma
 generate:
   - generator: javascript-client
     output: ../src/generated/prisma-client
+
+#Secret para autenticação.
+secret: mygraphqlmath123
+
+#Gatilho após o deploy.
+hooks:
+  post-deploy:
+    - prisma generate

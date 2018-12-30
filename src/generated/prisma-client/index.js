@@ -7,11 +7,16 @@ var models = [
   {
     name: "Link",
     embedded: false
+  },
+  {
+    name: "User",
+    embedded: false
   }
 ];
 exports.Prisma = prisma_lib_1.makePrismaClientClass({
   typeDefs,
   models,
-  endpoint: `https://us1.prisma.sh/goca1377-9a5bcc/gcmatheusj-prisma-db/dev`
+  endpoint: `https://us1.prisma.sh/goca1377-9a5bcc/gcmatheusj-prisma-db/dev`,
+  secret: `mygraphqlmath123`
 });
 exports.prisma = new exports.Prisma();
